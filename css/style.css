@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Zilla+Slab&display=swap');
+
+/*
+    font-family: "Zilla Slab", serif;
+    font-family: "Poppins", sans-serif;
+    Bg-color: #F58462;
+    secondary-color: #F5B862;
+    Font-color: #FFFFFF;   
+    Shadow: #F53D2C     
+*/
+
+body {
+    background-color: #F58462;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls li {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #F5B862;
+    font-size: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#controls a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-head {
+    font-family: "Zilla Slab", serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-top: 2px solid #FFFFFF ;
+}
+
+.article-1 {
+    margin-top: 3rem;
+}
+
+.article-1 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-1 p{
+    margin-top: 1rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-2 {
+    margin-top: 3rem;
+}
+
+.article-2 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-2 p{
+    margin-top: 1rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-3 {
+    margin-top: 3rem;
+}
+
+.article-3 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-3 p{
+    margin-top: 1rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    border-top: solid 2px #FFFFFF;
+}
+
+.bottom {
+    margin-top: 3rem;
+    background-color: #F5B862;
+    padding: 1rem;
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.foot i {
+    padding: 1rem;
+}
+
+.bottom p {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px 0 #F53D2C, 0 6px 20px 0 #F53D2C;
+}
+
+.container {
+    margin: 0px;
+    border-top: 2px solid #FFFFFF;
+}
+
+.row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card-body h5 {
+    font-family: "Zilla Slab", serif;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-family: "Poppins", sans-serif;
+}
+
+@media(min-width:30rem) {
+body {
+    background-color: #F58462;
+    color: #FFFFFF;
+}
+
+.wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+#controls li {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #F5B862;
+    font-size: 30px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#controls a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-head {
+    font-family: "Zilla Slab", serif;
+}
+
+.content {
+    margin-top: 1rem;
+    border-top: 2px solid #FFFFFF ;
+}
+
+.article-1 {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "a a"
+                         "b c";
+    margin-top: 3rem;
+}
+
+.article-1 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-1 img{
+    grid-area: b;
+}
+
+.article-1 p{
+    padding-left: 0.7rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-2 {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "a a"
+                         "b c";
+}
+
+.article-2 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-2 img{
+    grid-area: b;
+}
+
+.article-2 p{
+    padding-left: 0.7rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-3 {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "a a"
+                         "b c";
+}
+
+.article-3 h2{
+    grid-area: a;
+    background-color: #F5B862;
+    height: auto;
+    width: fit-content;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.article-3 img{
+    grid-area: b;
+}
+
+.article-3 p{
+    padding-left: 0.7rem;
+    grid-area: c;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    border-top: solid 2px #FFFFFF;
+}
+
+.bottom {
+    margin-top: 3rem;
+    background-color: #F5B862;
+    padding: 1rem;
+}
+
+.foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.foot i {
+    padding: 1rem;
+}
+
+.bottom p {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px 0 #F53D2C, 0 6px 20px 0 #F53D2C;
+}
+
+.container {
+    margin: 0px;
+    border-top: 2px solid #FFFFFF;
+}
+
+.row {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.card-body h5 {
+    font-family: "Zilla Slab", serif;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-family: "Poppins", sans-serif;
+}
+
+}
